@@ -2,7 +2,7 @@
 title: CG Blog
 SEOTitle: 糕的博客 | CG Blog
 header-img: img/post-bg-desk.jpg
-email: yunjie.zeng10@gmail.com
+email: yunjiezeng10@gmail.com
 description: "Every failure is leading towards success."
 keyword: "Chuigao"
 url: "https://ximenchuigao.github.io/"          # your host, for absolute URL
@@ -32,7 +32,7 @@ kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
 # Featured Tags
-featured-tags: false                     # 是否使用首页标签
+featured-tags: true                     # 是否使用首页标签
 featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
 
 # Progressive Web Apps
