@@ -88,4 +88,16 @@ gsutil是GCP提供的与Cloud Storage交互的命令行工具，例如：
 ![在数据分析中的应用](/assets/cloud-storage-backups-and-archives.png)
 
 ## Cloud Filestore
+Cloud Filestore 是一种高性能托管式文件存储服务，适合那些需要使用文件系统接口和共享文件系统来存储数据的应用。Filestore 为用户带来了简单易用的原生体验，让用户能够为其 GCE 和 GKE实例建立托管式网络附加存储 (NAS) 空间。用户可以对 Filestore 的性能和容量进行独立调优。
+
+### 架构
+#### 数据加密
+当数据从Filestore实例外部传输到Filestore中时，数据默认会被系统定义的密钥加密。当Filestore实例被删除时，Google会把密钥也删除。
+#### 网络
+除非使用shared VPC网络连接，否则，FileStore实例与VPC网络必须在同一个Project内。
+#### 可靠性
+由于Filestore是属于zone层级的资源，因此，它在zone范围内会进行冗余备份以容灾。但如果整个zone发生故障，则Filestore不可用。
+##### NFS 版本
+Filestore 实例使用NFSv3版本。
+
 
