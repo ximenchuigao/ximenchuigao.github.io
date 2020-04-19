@@ -11,6 +11,7 @@ tags:
 
 ## 简介
 谷歌云平台的存储服务有：
+
 - Cloud Storage 
 支持全球边缘缓存的对象存储服务
 - Cloud Filestore
@@ -18,8 +19,12 @@ tags:
 - Persistent Disk
 用于虚拟机实例的块存储服务
 - Drive Enterprise
+独立于G Suite 的存储协作服务
 - Cloud Storage for Firebase
+为Firebase设计的Cloud Storage,可供快速存储/读取用户数据，例如照片，视频等。
 - Local SSD
+从物理上直接attached到虚拟机实例上，因此，其具有非常快的读写速度。
+
 
 下面就来介绍一下它们的特点以及相应的使用场景
 
@@ -60,13 +65,14 @@ Cloud Storage可以用于host静态网站，其提供了CORS支持。
 gsutil是GCP提供的与Cloud Storage交互的命令行工具，例如：
 - 创建一个bucket:  
   `` gsutil mb -b on -l us-east1 gs://my-awesome-bucket/ ``
-
 - 下载数据  
   `` gsutil cp gs://my-awesome-bucket/image.png``
-- 列出一个bucket 里的data object
+- 列出一个bucket 里的data object  
   `` gsutil ls gs://my-awesome-bucket ``
 
-等等，更多命令可参考官方文档
+等等，更多命令可参考相关官方文档
+### 权限设置
+详见Cloud IAM, 在这不做赘述。
 ### 典型应用
 
 #### 在数据分析中的应用
