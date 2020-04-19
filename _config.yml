@@ -1,10 +1,10 @@
 # Site settings
-title: CG Blog
-SEOTitle: 糕的博客 | CG Blog
+title: 吹糕 --！
+SEOTitle: 糕的博客 | 吹糕 --！
 header-img: img/post-bg-desk.jpg
 email: yunjiezeng10@gmail.com
-description: "Every failure is leading towards success."
-keyword: "Chuigao"
+description: "飘啊飘啊飘啊飘"
+keyword: "GCP"
 url: "https://ximenchuigao.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/ximenchuigao/ximenchuigao.github.io.git" # you code repository
@@ -32,8 +32,8 @@ kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
 # Featured Tags
-featured-tags: true                     # 是否使用首页标签
-featured-condition-size: 0             # 相同标签数量大于这个数，才会出现在首页
+featured-tags: true                    
+featured-condition-size: 0             
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
