@@ -1,1 +1,1 @@
-# ximenchuigao.github.io
+http://chuigao.net/
